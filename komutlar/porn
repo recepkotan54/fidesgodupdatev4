@@ -5,7 +5,7 @@ exports.run = (client, message) => {
  message.channel.send({embed: {
       file:"https://media.giphy.com/media/Rm9X4x9Z7RzPO/giphy.gif",
           color: 0xD97634,
-		  description: "**:sunny: Sen ne Bekliyodun ... :) !**"
+		  description: "**:sunny: Sen ne Bekliyodun :smiley: !**"
             }});
 };
 
