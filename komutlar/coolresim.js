@@ -6,7 +6,7 @@ exports.run = (client, message) => {
  message.channel.send({embed: {
           "image": {
           url: coolImages.one(600, 800)},
-          color: RANDOM,
+          color: 'RANDOM',
             }});};
 
 exports.conf = {
