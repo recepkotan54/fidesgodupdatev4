@@ -1,0 +1,23 @@
+const Discord = require('discord.js');
+const client = new Discord.Client();
+
+exports.run = (client, message) => {
+ message.channel.send({embed: {
+      file:"https://media.giphy.com/media/Rm9X4x9Z7RzPO/giphy.gif",
+          color: 0xD97634,
+		  description: "**:sunny: Sen ne Bekliyodun ... :) !**"
+            }});
+};
+
+exports.conf = {
+  enabled: true,
+  guildOnly: false,
+  aliases: ['b'],
+  permLevel: 0
+};
+
+exports.help = {
+  name: 'troll',
+  description: '.',
+  usage: 'troll'
+};
