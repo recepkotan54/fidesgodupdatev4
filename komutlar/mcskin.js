@@ -3,10 +3,10 @@
 exports.run = (client, message, args) => {
   if (!message.guild) {
   const ozelmesajuyari = new Discord.RichEmbed()
-  .setDescription('Özel mesajlarda komut kullanımı kapatılmıştır.')
+  .setDescription('Özel Mesajlarda Komut Kullanımı Kapatılmıştır.')
   return message.author.sendEmbed(ozelmesajuyari); }
 	let mesaj = args.slice(0).join(' ');
-	if (mesaj.length < 1) return message.channel.sendEmbed(new Discord.RichEmbed().setDescription('Bir kullanıcı ismi yazmalısın. :writing_hand:').setColor('RANDOM'));
+	if (mesaj.length < 1) return message.channel.sendEmbed(new Discord.RichEmbed().setDescription('Bir Kullanıcı İsmi Yazmalısın. :writing_hand:').setColor('RANDOM'));
 	const mesaj2 = new Discord.RichEmbed()
     .setColor('RANDOM')
 	.setDescription(`${mesaj}`)
@@ -23,6 +23,6 @@ exports.conf = {
 
 exports.help = {
   name: 'mcskin',
-  description: 'İstediğiniz şeyi bota yazdırır.',
-  usage: 'mcs'
+  description: 'Arattığınız Kişisin Mc Skinini Gösterir.',
+  usage: 'mcskin'
 };
